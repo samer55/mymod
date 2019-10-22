@@ -1,0 +1,47 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'fruitStore' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for fruitStore
+
+  target 'fruitStore-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+    pod 'react-native-image-picker', :path => '../node_modules/react-native-image-picker'
+
+    pod 'rn-fetch-blob', :path => '../node_modules/rn-fetch-blob'
+
+    pod 'react-native-photo-view', :path => '../node_modules/react-native-photo-view'
+
+    pod 'react-native-google-places', :path => '../node_modules/react-native-google-places'
+
+  end
+
+  target 'fruitStoreTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'fruitStore-tvOS' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for fruitStore-tvOS
+
+  target 'fruitStore-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+# react-native-google-place-picker dependencies
+
+pod 'GooglePlacePicker', '= 2.0.1'
+pod 'GooglePlaces', '= 2.0.1'
+pod 'GoogleMaps', '= 2.0.1'
